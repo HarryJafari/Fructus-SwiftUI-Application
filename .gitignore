@@ -1,0 +1,48 @@
+# User-specific files
+*.swp
+*.swo
+*.DS_Store
+
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+
+# Swift Package Manager
+/.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Archives
+*.xcarchive
+
+# Workspace
+xcuserdata/
+*.xcworkspace
+
+# Shared Playground Data
+timeline.xctimeline
+playground.xcworkspace
+
+# App-specific files
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata
+*.xcodeproj/xcshareddata/xcschemes/*
+!*.xcodeproj/xcshareddata/xcschemes/Shared.xcscheme
+
+# Unit test and UI test targets
+*.xctest
+
