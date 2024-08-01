@@ -34,6 +34,8 @@ struct FruitDetailView: View {
                         
                         // NUTRIENTS
                         
+                        FruitNutrientsView(fruit: fruit)
+                        
                         //SUBHEADLINE
                         Text("Learn more about \(fruit.title)".uppercased())
                             .fontWeight(.bold)
@@ -55,6 +57,7 @@ struct FruitDetailView: View {
             } //: End of scrollview
             .edgesIgnoringSafeArea(.top)
         }//: end of navigationview
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

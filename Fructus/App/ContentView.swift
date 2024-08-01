@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //MARK: PROPERTIES
-    
+    @State private var isShowingSettings: Bool = false
     var fruits: [Fruit] = fruitsData
     
     //MARK: BODY
@@ -26,7 +26,18 @@ struct ContentView: View {
                 }//MARK: End Of Foreach
             }// MARK: End of List
             .navigationTitle("Fruits")
+            .navigationBarItems(trailing: Button(action: { 
+                isShowingSettings = true
+            }) {
+                Image(systemName: "slider.horizontal.3")
+            }
+                .sheet(isPresented: $isShowingSettings, content: {
+                    SettingsView()
+                })
+            )
         } //MARK: End Of Navigarion
+        //this line is for ipads
+        .navigationViewStyle(StackNavigationViewStyle())
 
         
     }
